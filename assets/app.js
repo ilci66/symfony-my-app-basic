@@ -15,9 +15,14 @@ import './bootstrap';
 const $ = require('jquery');
 
 const submitButton = $('.submit-button');
+const toDoInput = $('.to-do-form-input');
+const toDoUL = $('.to-do-ul');
+
 submitButton.on('click', (e) => {
     e.preventDefault();
 
+    toDoUL.append($("<li></li>").append(toDoInput.val()))
     // continue after the break
-    alert('wanna add something')
+    // alert(toDoInput.val())
+    toDoInput.val("")
 })
