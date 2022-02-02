@@ -13,8 +13,14 @@ class ItemsController extends AbstractController
      */
     public function index(): Response
     {
+        $items = array(
+            array('name'=>'item 1', 'id' => "1"),
+            array('name'=>'item 2', 'id' => "2"),
+            array('name'=>'item 3', 'id' => "3"),
+        );
         return $this->render('items/index.html.twig', [
             'controller_name' => 'ItemsController',
+            'items' => $items
         ]);
     }
 }

@@ -12,16 +12,13 @@ class DetailedController extends AbstractController
     /**
      * @Route("/detailed/{slug}", name="detailed_item")
      */
-    public function index(): Response
+    public function index($slug): Response
     {
-        $answers = [
-            'item 1',
-            'item 2',
-            'item 2',
-        ];
+
         
         return $this->render('detailed/index.html.twig', [
             'controller_name' => 'DetailedController',
+            'slug' => $slug
         ]);
     }
 }

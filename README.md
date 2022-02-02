@@ -14,3 +14,6 @@ I know how symfony works. Reading and searching for best practices as I go.
 *   Nginx
 *   Docker
 *   Mysql
+
+### Currently Working On
+As I don't have much experience with symfony and twig template engine yet, I'm making sure that I understand all the basics of symfony beofre I move on to including other technologies.
