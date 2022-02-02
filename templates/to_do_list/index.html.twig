@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ToDoListController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 9600px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper  d-flex flex-column justify-content-center align-items-center">
+    {# <h1>Hello {{ controller_name }}! ✅</h1> #}
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="col">
+        <h2 class="text-center">To do list</h2>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="todoactivity">Add something</label>
+                        <input 
+                            type="text" 
+                            required 
+                            class="form-control" 
+                            id="todoactivity" 
+                            aria-describedby="todohelp" 
+                            placeholder="Workout"
+                        >
+                        <small id="todohelp" class="form-text text-muted">Just Add an activity</small>
+                    </div>
+                    <button type="" class="submit-button btn btn-primary">Add</button>
+                </form>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Walk the dog</li>
+                    <li>Learn symfony</li>
+                    <li>Have breakfast</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

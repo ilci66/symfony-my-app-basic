@@ -17,10 +17,14 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="nav-links-container d-flex flex-direction-row">
                 <a href={{ path('app_homepage') }} class="nav-link">Home</a>
-                <a href="#" class="nav-link">Some Page</a>
+                <a href={{ path('app_todo') }} class="nav-link">To Do List</a>
                 <a href="#" class="nav-link">Another Page</a>
             </div>
         </nav>
         {% block body %}{% endblock %}
+        <footer class="mt-5 p-3 text-center bg-secondary text-white position-absolute w-100 bottom-0">
+            I will sue you if you use any of this code!!! JK mate!<br>
+            This awesome joke is presented by <b>Ilker Akbiyik</b>
+        </footer>
     </body>
 </html>

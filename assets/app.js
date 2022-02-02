@@ -10,3 +10,14 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+
+const $ = require('jquery');
+
+const submitButton = $('.submit-button');
+submitButton.on('click', (e) => {
+    e.preventDefault();
+
+    // continue after the break
+    alert('wanna add something')
+})
